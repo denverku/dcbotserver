@@ -2,13 +2,9 @@
   "name": "verceldiscordbot",
   "version": "1.0.0",
   "description": "discord bot made by d.js hosted on vercel",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"no tests\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/KoolMoh/Discord-Bot.git"
+    "start": "node /index.js"
   },
   "keywords": [
     "discordbot",
@@ -19,10 +15,6 @@
   ],
   "author": "KoolMoh",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/KoolMoh/Discord-Bot/issues"
-  },
-  "homepage": "https://github.com/KoolMoh/Discord-Bot#readme",
   "dependencies": {
     "discord.js": "^14.12.1",
     "express": "^4.19.2"
