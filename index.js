@@ -24,6 +24,10 @@ client.on(Events.MessageCreate, (message) => {
   message.reply('I exist');
 })
 
-client.login(token);
-
+console.log(proccess.env.TOKEN);
+try {
+  client.login(token);
+} catch (err) {
+  console.log(err)
+}
 module.exports = app;
