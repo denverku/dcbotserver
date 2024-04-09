@@ -9,7 +9,6 @@ app.get('/', (req, res) => {
   res.sendStatus(200);
 });
 
-
 // registering slash commands
 const client = new Client({
   intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.DirectMessages],
