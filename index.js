@@ -24,7 +24,7 @@ client.on(Events.MessageCreate, (message) => {
   message.reply('I exist');
 })
 
-console.log(proccess.env.TOKEN);
+console.log(process.env.TOKEN);
 try {
   client.login(token);
 } catch (err) {
