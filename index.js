@@ -2,7 +2,7 @@ const express = require('express');
 const fs = require('fs');
 const app = express();
 const { Client, Collection, Events, GatewayIntentBits } = require('discord.js');
-const token = "MTE1ODI5OTI0NzA4NzczNDc4NA.GoAXXu.DDx0n2178Kn7GOD4oddJzJHXjjx-8qtbIw3KVA";
+const token = process.env.APPLICATION_ID;
 
 // listening to requests
 app.get('/', (req, res) => {
