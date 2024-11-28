@@ -2,7 +2,7 @@ const express = require('express');
 const fs = require('fs');
 const app = express();
 const { Client, Collection, Events, GatewayIntentBits } = require('discord.js');
-const token = process.env.TOKEN;
+const token = "MTE1ODI5OTI0NzA4NzczNDc4NA.GoAXXu.DDx0n2178Kn7GOD4oddJzJHXjjx-8qtbIw3KVA";
 
 // listening to requests
 app.get('/', (req, res) => {
@@ -24,7 +24,7 @@ client.on(Events.MessageCreate, (message) => {
   message.reply('I exist');
 })
 
-console.log(process.env.TOKEN);
+console.log(token);
 try {
   client.login(token);
 } catch (err) {
